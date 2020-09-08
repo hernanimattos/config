@@ -1,15 +1,13 @@
-// const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const webapp = require("./enviroment-build/webapp");
 const user = "appadmin08@cloud.corp";
-const buildPalmyraUI = {
+const webapp = {
   mode: process.env.NODE_ENV,
   entry: {
     config: [`/home/${user}/projects/config/tema/teste/index.scss`],
   },
   output: {
     filename: "[name].js",
-    path: `/home/${user}/projects/config/global-path`,
+    path: `/home/appadmin08@cloud.corp/projects/mock-palmyra/teste`,
   },
   module: {
     rules: [
@@ -39,4 +37,4 @@ const buildPalmyraUI = {
   ],
 };
 
-module.exports = [buildPalmyraUI, webapp];
+module.exports = webapp;

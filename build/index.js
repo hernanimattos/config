@@ -18,8 +18,9 @@ instalCaceis(
   .catch((e) => {
     console.log(" data", e);
   });
+
 instalLibrary(
-  `npm install -g ~/home/${user}/projects/mock-palmyra/demo-primeng-library`
+  `npm install -g /home/appadmin08@cloud.corp/projects/mock-palmyra/demo-primeng-library`
 )
   .then((data) => {
     console.log(" data", data);
@@ -27,7 +28,3 @@ instalLibrary(
   .catch((e) => {
     console.log(" data", e);
   });
-
-//cmd.run(`rm example.created.file`, (err, data, std) => {
-//	console.table({ err, data, std });
-//});
