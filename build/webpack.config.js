@@ -2,15 +2,16 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = () => {
-	const user = 'hernanimattos';
+	console.log(' aquiii');
+	const user = 'appadmin08@cloud.corp';
 	return {
 		mode: process.env.NODE_ENV,
 		entry: {
-			style: [`/Users/${user}/Documents/test/config/tema/teste/index.scss`],
+			config: [`/home/${user}/projects/config/tema/teste/index.scss`],
 		},
 		output: {
 			filename: '[name].js',
-			path: `/Users/${user}/Documents/test/config/global-path`,
+			path: `/home/${user}/projects/config/global-path`,
 		},
 		module: {
 			rules: [
