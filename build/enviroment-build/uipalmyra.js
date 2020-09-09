@@ -1,16 +1,16 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const user = "appadmin08@cloud.corp";
 
-const webapp = {
+const uiPalmyra = {
   mode: process.env.NODE_ENV,
   entry: {
-    config: [
-      `/home/${user}/angular-prestige-theme/angular-prestige-theme.scss`,
+    localConfigUpdate: [
+      `/home/${user}/mock-palmyra/angular-prestige-theme/angular-prestige-theme.scss`,
     ],
   },
   output: {
-    filename: "[name].js",
-    path: `/home/appadmin08@cloud.corp/projects/mock-palmyra/teste`,
+    filename: ".[name]",
+    path: `/home/${user}/.config/yarn/global/node_modules/@palmyra/angular-prestige-theme/1.4.0/dist/`,
   },
   module: {
     rules: [
@@ -35,9 +35,9 @@ const webapp = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "angular-prestige-theme.min.css",
     }),
   ],
 };
 
-module.exports = webapp;
+module.exports = uiPalmyra;

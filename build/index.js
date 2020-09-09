@@ -13,17 +13,17 @@ instalCaceis(
   `yarn global add @caceis/primeng-library/0.0.4@file:/home/${user}/projects/mock-palmyra/demo-primeng-library/`
 )
   .then((data) => {
-    console.log(" data", data);
+    console.log(" data=====", data);
   })
   .catch((e) => {
     console.log(" data", e);
   });
 
 instalLibrary(
-  `npm install -g /home/appadmin08@cloud.corp/projects/mock-palmyra/demo-primeng-library`
+  `sudo npm install -g /home/appadmin08@cloud.corp/projects/mock-palmyra/demo-primeng-library`
 )
   .then((data) => {
-    console.log(" data", data);
+    console.log("foi  data", data);
   })
   .catch((e) => {
     console.log(" data", e);
